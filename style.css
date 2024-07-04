@@ -1,0 +1,155 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+nav{
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h3{
+  font-size: 20px;
+}
+
+.links a{
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+header{
+  padding: 3vw;
+  background-color: #d3d3d3;
+}
+
+header h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+header p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#new-p{
+  display: none;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(170, 172, 173);
+  padding: 30px;
+}
+
+article{
+  width: 30%;
+  background-color: rgb(44, 44, 44);
+  color: rgba(255, 255, 255, 0.792);
+  padding: 20px 30px;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+article h2{
+  margin-bottom: 10px;
+}
+
+article p{
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#new-a{
+  display: none;
+}
+
+aside{
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  transform: translate(0 ,-50%);
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+footer{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: aliceblue;
+  padding: 30px 0;
+}
+
+@media (max-width:600px){
+
+  .links a{
+    margin: 0 4px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  nav h3{
+    font-size: 15px;
+  }
+
+  header h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  header{
+    padding: 20px;
+  }
+
+  #old-p{
+    display: none;
+  }
+
+  #new-p{
+    display: inline;
+  }
+
+  article{
+    width: 60%;
+    height: 35%;
+  }
+  
+  article h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  
+  #old-a{
+    display: none;
+  }
+
+  #new-a{
+    display: inline;
+  }
+
+  
+  aside{
+    font-size: 13px;
+  }
+
+  footer{
+    font-size: 12px;
+  }
+}

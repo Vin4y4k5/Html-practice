@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Code</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+  <style>
+
+    body{
+      background-color: gainsboro;
+    }
+
+    .box{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: rebeccapurple;
+    }
+
+    .a{
+      color: blue;
+    }
+
+    .b{
+      color: darkred;
+    }
+
+    #d{
+      color: green;
+    }
+
+    .text-font{
+      font: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    .video{
+      height: 300px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 5px;
+    }
+
+    #apple{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    #list{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    #div1{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    #div2{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    #div3{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+
+    #audio-video{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+
+    @media (max-width:600px) {
+
+    #div1{
+      display: block;
+    }
+
+    #div1 input{
+      margin-bottom: 2vw;
+    }
+
+    #div2{
+      display: block;
+    }
+
+    #div2 input{
+      margin-bottom: 2vw;
+    }
+
+    #div3{
+      display: block;
+    }
+
+    #div3 input{
+      margin-bottom: 2vw;
+    }
+
+    #audio-video{
+      display: block;
+    }
+
+    #audio-video video{
+      width: 100%;
+      height: 50%;
+    }
+      
+    }
+    
+  </style>
+
+</head>
+
+  <div id="apple">
+    <h1>apple</h1>
+    <h2>apple</h2>
+    <h3>apple</h3>
+    <h4>apple</h4>
+    <h5>apple</h5>
+    <h6>apple</h6>
+  </div>
+
+  <div>
+    <p>Lorem ipsum <b>dolor</b> <i>sit</i> amet.</p>
+
+    <p>2<sup>2</sup> = 4</p>
+    <p>co<sub>2</sub> is a gas.</p>
+
+    <p>Lorem ipsum dolor <br> sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <a target="_blank" href="https://www.youtube.com"> youtube</a>
+  </div>
+
+  <div id="list">
+    <ol>
+      <li>new</li>
+      <li>new</li>
+      <li>new</li>
+      <li>new</li>
+    </ol>
+
+    <ul>
+      <li>new</li>
+      <li>new</li>
+      <li>new</li>
+      <li>new</li>
+    </ul>
+  </div>
+
+  <form>
+    <div id="div1">
+      <div id="div1-1">
+        <label for="abc">Name</label>
+        <input id="abc" type="text" placeholder="text">
+      </div>
+
+      <input type="email" placeholder="email">
+      <input type="checkbox">
+      <input type="password" placeholder="password">
+    </div>
+
+    <br><br>
+
+    <div id="div2">
+      <div id="div2-1">
+        <input name="a" type="radio">male
+        <input name="a" type="radio">female
+        <input name="a" type="radio">others
+      </div>
+      <input type="range">
+      <input type="color">
+      <input type="submit">
+    </div>
+
+    <br><br>
+
+    <div id="div3">
+      <input type="search" placeholder="search">
+      <input type="date">
+      <input type="file">
+    </div>
+  </form>
+
+  <br><br>
+
+  <div class="text-font">
+    <p class="a">hello</p>
+    <p class="b">hello</p>
+    <p id="d">hello</p>
+  </div>
+  
+  <br><br>
+
+  <div id="audio-video">
+    <audio src="./audio-video/Y2meta.app - What people think programming is vs. how it actually is (320 kbps).mp3" controls></audio>
+    <video autoplay loop muted class="video" src="./audio-video/What people think programming is vs. how it actually is.mp4" controls></video>
+  </div>  
+
+</body>
+</html>
